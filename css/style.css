@@ -28,6 +28,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
+
 ol, ul {
 	list-style: none;
 }
@@ -125,4 +127,60 @@ body {
   width: 90px;
   text-align: center;
   cursor: pointer;
+}
+
+.buttons-container {
+  display: none;
+}
+
+@media (width < 870px) {
+  .buttons-container {
+    display: block;
+    cursor: pointer;
+    z-index: 999;
+    width: 32px;
+    overflow: hidden;
+  }
+  .buttons-content {
+    display: flex;
+    transition: all .5s ease;
+  }
+  .categories {
+    position: absolute;
+    top: -20px;
+    left: -230px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    height: 100vh;
+    padding: 100px 20px 20px 20px;
+    z-index: 99;
+    transition: all .5s ease;
+  }
+  .visible {
+    left: -20px;  
+  }
+  .change-button {
+    margin-left: -40px;
+  }
+
+  .button-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .black {
+    background-color: rgba(0, 0, 0, 0.309);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    opacity: 0;
+    transition: all .5s ease;
+  }
+  .blackvisible {
+    opacity: 1;
+  }
 }

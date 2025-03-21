@@ -8,12 +8,23 @@
 </head>
 <body>
   <header class="header-top">
+    <div id="buttons-container" class="buttons-container">
+      <div id="buttons-content" class="buttons-content">
+        <button id="buttonOpen" class="button-menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+        </button>
+        <button id="buttonClose" class="button-menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+    </div>
     <div class="logo">
       <a href="/">
         <img src="./img/logo.png" alt="logo planet skin" />
       </a>
     </div>
-    <nav class="categories">
+    <nav id="categories" class="categories">
       <a href="">Cuidado facial</a>
       <a href="">Tipo de piel</a>
       <a href="">Te preocupa</a>
@@ -28,6 +39,7 @@
     </div>
   </header>
   <main>
+    <div id="black" class="black"></div>
     <section class="hero">
       <img src="./img/sk_fondo.jpg" alt="productos planet skin" />
       <div class="overlay">
@@ -40,7 +52,6 @@
     </section>
     <p>A partir de aquí podéis seguir vosotros. Ánimo!!!</p>
   </main>
-  
-  
+  <script src="./js/script.js"></script>
 </body>
 </html>
